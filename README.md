@@ -19,6 +19,14 @@ Prepared June 2024 for Nashville Software School's Data Analytics program.
 - [Download Spotify Million Playlist Dataset]: Save within repository ``\spotify-user-playlist-trends\data\Spotify``
 - Requirements: Jupyter 3.11.7
 
+## In This Repo
+- notebook folder: contains two python scripts.   
+-- billboard_data_scrape: scrapes Billboard Hot 100 Chart for the analytical period  
+-- spotify_billboard_analysis: processes Spotify files and explores activity related to top performing songs  
+- viz exports folder: csv exports from the analysis notebook used in creating accompanying visuals, and for Power BI analysis  
+- Chart v. Heart.pptx: cute 10 minute presentation that summarizes this analysis and its findings  
+- Spotify Billboard Dashboard.pbix: Power BI dashboard that outlines chart and playlist activity for top performing songs  
+
 ## Motivation
 Lack of data cohesion in the recorded music industry is a [well documented and ever-growing] issue in the recorded music industry.  This analysis is an early step in preparing to be part of a global data solution to empower music creators and consumers with accurate metadata.  Motivation for this analysis is twofold: 
 1. Multisource analysis: stems from the desire to source statistics about recorded music from two independent sources and find ways to conduct accurate and reliable analysis.  Existing data sources maintained in recorded music often only have song names and song titles in common -- if that.  One must understand a problem to solve it, no?

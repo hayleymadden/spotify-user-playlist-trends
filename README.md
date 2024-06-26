@@ -7,7 +7,6 @@ Prepared June 2024 for Nashville Software School's Data Analytics program.
 
 ## Table of Contents
 
-- [Title](#Chart-v.-Heart:-Spotify-User-Playlist-Trends)
 - [Table of Contents](#table-of-contents)
 - [Motivation](#motivation)
 - [Data](#data)
@@ -39,14 +38,13 @@ Billboard Hot 100 charts are hosted online, each chart having a unique URL.  A u
 From AIcrowd.com:
 >“The Spotify Million Playlist Dataset Challenge consists of a dataset and evaluation to enable research in music recommendations. It is a continuation of the RecSys Challenge 2018, which ran from January to July 2018. The dataset contains 1,000,000 playlists, including playlist titles and track titles, created by users on the Spotify platform between January 2010 and October 2017. The evaluation task is automatic playlist continuation: given a seed playlist title and/or initial set of tracks in a playlist, to predict the subsequent tracks in that playlist. This is an open-ended challenge intended to encourage research in music recommendations, and no prizes will be awarded (other than bragging rights).”
 
-The dataset, as well as other information, is available [here]).
+The dataset, as well as other information, is available [here]).  
 [↑ Table of Contents](#table-of-contents)
 
 ## The Question
-Does Spotify user interest in a song precede, contribute to, or follow its rise on the Billboard Hot 100 Charts?
+Does Spotify user interest in a song precede, contribute to, or follow its rise on the Billboard Hot 100 Charts?  
 [↑ Table of Contents](#table-of-contents)
 ## Method
-[↑ Table of Contents](#table-of-contents)
 ##### Source Billboard Hot 100 charts from January 2010 - October 2017
 Tools used:
 - Python
@@ -71,13 +69,14 @@ Technique
 -- Of that subset, identify tracks that held a position on the Billboard Hot 100 Chart
 
 ##### Unify - Create a Key
-Datasets are independent; key created in each set in the format of ``artistname-songname`` to link datasets by song and ensure the proper songs are sourced for analysis.  Each dataset requires a number of string cleaning operations in order to match:
-Billboard: Artist name replacement ('Ke$ha' > 'kesha'), track name modifiers ('Uptown Funk!' > 'uptown funk'), track name Features and co-Artists
-Spotify: Exclude certain versions of a track ('remix', 'club', 'dub', 'version', 'cover'), removal of featured artists/co-artists
+Datasets are independent; key created in each set in the format of ``artistname-songname`` to link datasets by song and ensure the proper songs are sourced for analysis.  Each dataset requires a number of string cleaning operations in order to match:  
+Billboard: Artist name replacement ('Ke$ha' > 'kesha'), track name modifiers ('Uptown Funk!' > 'uptown funk'), track name Features and co-Artists  
+Spotify: Exclude certain versions of a track ('remix', 'club', 'dub', 'version', 'cover'), removal of featured artists/co-artists  
+
 [↑ Table of Contents](#table-of-contents)
-## Challenges and Known External Factors (expressed as song titles)
-The Times They Are A-Changin':  Billboard and Spotify both underwent major changes between 2010 and 2017 due to the rise in popularity of music streaming services and changes in how music is consumed.  The subsample of the Million Playlist Data is heavily skewed to the years 2016 - 2017.
-IDGAF:  Spotify users that take time to curate personal playlists may not accurately represent the average listener.  Users interested in curating a playlist are likely attentive listeners with a genre, mood, or theme in mind; in other words, they're more likely to GAF.
+## Challenges and Known External Factors (expressed as song titles)  
+- The Times They Are A-Changin':  Billboard and Spotify both underwent major changes between 2010 and 2017 due to the rise in popularity of music streaming services and changes in how music is consumed.  The subsample of the Million Playlist Data is heavily skewed to the years 2016 - 2017.  
+- IDGAF:  Spotify users that take time to curate personal playlists may not accurately represent the average listener.  Users interested in curating a playlist are likely attentive listeners with a genre, mood, or theme in mind; in other words, they're more likely to GAF.  
 [↑ Table of Contents](#table-of-contents)
 
 
